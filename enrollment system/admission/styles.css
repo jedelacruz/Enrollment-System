@@ -55,7 +55,7 @@ nav a{
     text-decoration: none;
 }
 
-nav a:first-child{
+nav a:nth-child(3){
     color: #05244F;
     text-decoration: underline;
 }
@@ -106,12 +106,6 @@ nav a:hover{
     margin-bottom: 20px;
 }
 
-.landing-page-box-1 div a{
-    color: #22244F;
-    text-decoration: none;
-    border-bottom: 1px solid #05244F;
-}
-
 .landing-page-box-2{
     height: 100%;
     width: 50%;
@@ -123,73 +117,62 @@ nav a:hover{
     height: 100%;
 }
 
-.landing-page-section-2{
-    display: flex;
-    min-height: 80%;
+.page2-section{
     width: 100%;
-}
-
-.landing-page-section-2-box-1{
-    width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #C9ECF5;
+    min-height: 70vh;
 }
 
-.landing-page-section-2-box-1 img{
+.page2-section img{
     width: 50%;
 }
 
-.landing-page-section-2-box-2{
+.page2-box1{
     width: 50%;
-    background-color: #E4F9FF;
+    padding: 100px;
+    background-color: #FFD2C4;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.landing-page-section-2-box-2 div{
-    width: 50%;
-    color: #22244F;
-}
-
-.landing-page-section-2-box-2 div h1{
-    margin-bottom: 10px;
-}
-.landing-page-box-3-container{
-    flex-wrap: wrap;
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-.landing-page-box-3{
-    height: 100vh;
-}
-.landing-page-box-3-title{
-    height: 20%;
-    display: flex;
-    align-items: center;
-}
-.landing-page-box-3-container{
-    height: 80%;
-    display: flex;
-    gap:   20px;
-    justify-content: center;
-    flex-direction: row;
-    padding-bottom: 10vh;
-}
-.landing-page-box-3-container div{
-    width: 32%;
-    height: 50%;
-    background-color: #E4F9FF;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
     flex-direction: column;
+    gap: 20px;
+    color: #22244F;
+    justify-content: center;
     align-items: center;
-    color: #05244F;
 }
+.page2-box2{
+    width: 50%;
+    padding: 100px;
+    background-color: #FFE8E1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #22244F;
+    justify-content: center;
+    align-items: center;
+}
+.page3-section{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E4F9FF;
+}
+.page3-section a{
+    background-color: #22244F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px 50px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.page3-section a:hover{
+    opacity: 0.9;
+}
+.page3-section a:active{
+    opacity: 0.7;
+}
+
 @media only screen and (max-width: 767px) {
 
 .header-container{
@@ -254,48 +237,27 @@ h1{
 }
 .landing-page-box-1{
     width: 100%;
-    height: 30%;
+    min-height: 70%;
 }
 .landing-page-box-1 div{
     padding: 20px;
 }
 
-.landing-page-box-1 div a{
-    font-size: 14px;
-}
-
 .landing-page-box-2{
     width: 100%;
-    height: 70%;
+    height: 30%;
 }
-.landing-page-section-2{
+.page2-section{
     flex-direction: column;
+    min-height: 90vh;
 }
-.landing-page-section-2-box-1{
-    height: 30%;
+.page2-box1{
     width: 100%;
-    padding: 10px;
-    flex: 1;
+    padding: 20px;
 }
-.landing-page-section-2-box-1 img{
-    width: 80%;
-}
-
-.landing-page-section-2-box-2{
-    height: 70%;
+.page2-box2{
     width: 100%;
-    padding: 10px;
-}
-
-.landing-page-section-2-box-2 div{
-    width: 90%;
-}
-.landing-page-box-3-container{
-
-}
-.landing-page-box-3-container div{
-    width: 100%;
-    height: 30%;
+    padding: 20px;
 }
 }
 
